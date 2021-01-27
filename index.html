@@ -1,14 +1,6 @@
 <html>
     <script src="game.js"></script>
-    <style>
-        .guess {
-            height: 25px;
-            width: 25px;
-            background-color: lime;
-            border-radius: 50%;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
     <head>
         <div>
             <h1>Guesses</h1>
@@ -19,10 +11,9 @@
             <span class="guess"></span>
             <span class="guess"></span>
         </div>
-        <form>
-            <label>Guess a letter</label><br>
-            <input type="text" id="guessIn">
-
-        </form>
+        <button onclick="takeGuess()">Take a guess!</button>
+        <div>
+            
+        </div>
     </head>
 </html>
