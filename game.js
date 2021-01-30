@@ -13,3 +13,12 @@ console.log(chosen)
 console.log("_ ".repeat(chosen.length))
 console.log(chosen.length)
 document.getElementById("word").innerHTML = "_ ".repeat(chosen.length);
+// eslint-disable-next-line no-unused-vars
+function process() {
+// eslint-disable-next-line no-undef
+if (chosen.includes(guess)) {
+
+} else {
+    
+}
+}
