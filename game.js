@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 function takeGuess(){
-    return prompt("Enter a letter");
+    return(prompt("Enter a letter"))
 }
 
 function rArray(list) {
