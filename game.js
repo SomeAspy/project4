@@ -1,3 +1,5 @@
+let fails = 6
+
 // eslint-disable-next-line no-unused-vars
 function takeGuess(){
     return(prompt("Enter a letter"))
@@ -13,11 +15,14 @@ console.log(chosen)
 console.log("_ ".repeat(chosen.length))
 console.log(chosen.length)
 document.getElementById("word").innerHTML = "_ ".repeat(chosen.length);
+// eslint-disable-next-line no-unused-vars
 function process() {
 if (chosen.includes(window.guess)) {
-
+console.log("ok")
 } else {
-    window.$("guessUI").removeClass(".guess"+window.fails)
-    window.fails-=1
+    let element = document.getElementById(fails)
+    // eslint-disable-next-line no-undef
+    $(element).removeClass()
+    fails -=1
 }
 }
