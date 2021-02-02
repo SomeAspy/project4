@@ -9,16 +9,22 @@ function rArray(list) {
     return list[Math.floor(Math.random()*list.length)];
 }
 
+function refresh() {
+    document.getElementById("word").innerHTML = display;
+}
+
 // eslint-disable-next-line no-undef
 let chosen = rArray(nouns);
 console.log(chosen)
-console.log("_ ".repeat(chosen.length))
+console.log("?".repeat(chosen.length))
 console.log(chosen.length)
-document.getElementById("word").innerHTML = "_ ".repeat(chosen.length);
+let display = "?".repeat(chosen.length)
+refresh()
 // eslint-disable-next-line no-unused-vars
 function process() {
 if (chosen.includes(window.guess)) {
-console.log("ok")
+    let out = display.split("").splice(chosen.indexOf(window.guess))
+    console.log(out)
 } else {
     let element = document.getElementById(fails)
     // eslint-disable-next-line no-undef

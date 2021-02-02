@@ -1,39 +1,4 @@
-.guess1 {
-    height: 25px;
-    width: 25px;
-    background-color: lime;
-    border-radius: 50%;
-    display: inline-block;
-}
-.guess2 {
-    height: 25px;
-    width: 25px;
-    background-color: lime;
-    border-radius: 50%;
-    display: inline-block;
-}
-.guess3 {
-    height: 25px;
-    width: 25px;
-    background-color: lime;
-    border-radius: 50%;
-    display: inline-block;
-}
-.guess4 {
-    height: 25px;
-    width: 25px;
-    background-color: lime;
-    border-radius: 50%;
-    display: inline-block;
-}
-.guess5 {
-    height: 25px;
-    width: 25px;
-    background-color: lime;
-    border-radius: 50%;
-    display: inline-block;
-}
-.guess6 {
+.guess {
     height: 25px;
     width: 25px;
     background-color: lime;
