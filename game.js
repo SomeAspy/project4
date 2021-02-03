@@ -23,8 +23,11 @@ refresh()
 // eslint-disable-next-line no-unused-vars
 function process() {
 if (chosen.includes(window.guess)) {
-    let out = display.split("").splice(chosen.indexOf(window.guess))
-    console.log(out)
+    display = display.split("")
+    display.splice(chosen.indexOf(window.guess), 1, window.guess)
+    display = display.join("")
+    console.log(display)
+    refresh()
 } else {
     let element = document.getElementById(fails)
     // eslint-disable-next-line no-undef
