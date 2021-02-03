@@ -5,16 +5,13 @@ function takeGuess(){
     return(prompt("Enter a letter"))
 }
 
-function rArray(list) {
-    return list[Math.floor(Math.random()*list.length)];
-}
-
 function refresh() {
     document.getElementById("word").innerHTML = display;
 }
 
+
 // eslint-disable-next-line no-undef
-let chosen = rArray(nouns);
+let chosen = nouns[Math.floor(Math.random()*nouns.length)]
 console.log(chosen)
 console.log("?".repeat(chosen.length))
 console.log(chosen.length)
@@ -33,5 +30,10 @@ if (chosen.includes(window.guess)) {
     // eslint-disable-next-line no-undef
     $(element).removeClass()
     fails -=1
+    if(fails==0) {
+        display = chosen
+        refresh()
+        document.getElementById("button").remove()
+    }
 }
 }
